@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+</head>
+<style>
+.video{
+    top: 0;
+    left: 0;
+    width: 100%;
+   position: fixed;
+   z-index: -1;
+}
+.contact{
+    color: white;
+    border: 2px solid;
+    padding: 35px;
+    text-align: center;
+    width: max-content;
+    margin: auto;
+    border-radius: 20px;
+    font-size: 25px;
+    backdrop-filter: blur(15px);
+    /* margin-top: 200px; */
+}
+.form{
+height: 25px;
+border-radius: 8px;
+}
+.submit-button{
+font-size: 20px;
+border-radius: 20px;
+background-color: black;
+color: white;
+transition: 0.5s,  
+}
+.submit-button:hover {
+    background: transparent;
+    cursor: pointer;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+}
+.cnt{
+    color: white;
+    text-align: center;
+    margin-top: 150px;
+    font-size: 60px;
+}
+.cnt:hover{
+    background: transparent;
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+}
+.navbar{
+    float: right;
+  }
+  .nav a{
+    position: relative;
+    font-size: 20px;
+    color: rgb(245, 237, 237);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.5s;
+    
+    width: ;
+  }
+  a{
+    /* background-color: red; */
+    width: 50px;
+    border-radius: 4px;
+    padding: 5px;
+    transition: 0.5s;
+  }
+   a:hover{
+    -webkit-text-stroke: 0.5px whitesmoke;
+    color: transparent;
+    background:transparent;
+    border: 2px solid white;
+    border-radius: 8px;
+ 
+
+  }
+  
+  .btnl{
+    width:130px;
+    height: 30px;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgb(244, 236, 236);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.5;
+    margin-left: 40px;
+    transition: 0.8s;
+    color: goldenrod;
+    background-color: rgba(49, 43, 43, 0.619);
+  }
+  .btnl:hover{
+    background-color: rgba(27, 26, 26, 0.795);
+    color: white;
+    -webkit-text-stroke-color: 2px;
+    background: transparent;
+    -webkit-text-stroke-color: black;
+  }
+</style>
+<body>
+  <div class="navbar">
+    <ul class="nav">
+      <a href="./loginform2.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./contact.html">Contact</a>
+      <a href="./services.html">Services</a>
+      <button class="btnl">You are in </button>
+    </ul>
+  </div><br>
+
+<video autoplay loop muted class="video">
+    <source src="./login video.mp4" type="video/mp4">
+</video>
+
+
+<h1 class="cnt">Contact Us!</h1>
+<div class="contact">
+    <form id="contact-form">
+    <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required  class="form" placeholder="Name"/> <br> <br>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required  class="form" placeholder="@gmail"/><br> <br>
+
+        <label for="Mobile">Mobile no:</label>
+        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required  class="form"  placeholder="@123456789"/> <br> <br>
+
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" cols="30" required class="form" placeholder="Message"></textarea> <br> <br>
+
+        <form id="contact-form">
+        <input type="submit" value="Submit" class="submit-button" />
+
+
+        <div id="contact-form-message" class="contact-message"></div>
+  
+
+</div>
+
+<script>
+//     document.getElementById("contact-form").addEventListener("submit",async(event)=>{
+//         event.preventDefault();
+//         const  form=event.target;
+//         const formData=new formData(form);
+//         const response=await fetch(form.action,{
+//             method:"POST",
+//             body:formData,
+//         });
+// if(response.ok){
+//     form.reset();
+//     document.getElementById("contact-form-message").textContent="Your message has been sent. Thank you!";
+//     document.getElementById("contact-form-message").classList.add("success");
+
+// }
+// else{
+//     document.getElementById("contact-form-message").textContent ="Something went wrong, please try again.";
+//     document.getElementById("contact-form-message").classList.add("error");
+// }
+        
+//     });
+
+
+
+
+document.getElementById("contact-form").addEventListener("submit",async (event) => {
+  event.preventDefault();
+  const form = event.target;
+  const formData = new FormData(form);
+  const response = await fetch(form.action, {
+    method: "POST",
+    body: formData,
+  });
+  if (response.ok) {
+    form.reset();
+    document.getElementById("contact-form-message").textContent =
+      "Your message has been sent. Thank you!";
+    document.getElementById("contact-form-message").classList.add("success");
+  } else {
+    document.getElementById("contact-form-message").textContent =
+      "Something went wrong, please try again.";
+    document.getElementById("contact-form-message").classList.add("error");
+  }
+});
+</script>
+
+
+
+    </body>
+</html>

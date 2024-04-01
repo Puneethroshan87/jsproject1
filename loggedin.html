@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pr scrores</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</head>
+<style>
+   .redball{
+z-index: -1;
+top: 0;
+width: 100%;
+position: fixed;
+left: 0;
+  }
+  .card-body{
+    color: white;
+    /* background-color: transparent; */
+  }
+  .card{
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 6px;
+    height: 165px;
+    
+  }
+  .col-sm-6{
+ padding: 4px;
+  }
+</style>
+<body>
+<div class="nav1">
+   <center> <img src="./logo.jpg" alt="" height="30px"  class="logo"><center>
+</div>
+
+
+
+
+
+<div class="div2">
+    <a href="./loggedin.html" class="aa" style="float: left;"> <i class="fa-solid fa-house"  style="color: white;" ></i>home</a>
+ <a href="./matches.html" class="aa" style="float: left;"><img src="./cricket.png" class="cri" alt="" height="15px" width="20px" style="color: white;">Matches</a>
+
+ <a href="./index.html" class="Login" class="aa">Log out</a>
+
+
+
+
+ <img src="./red ball.jpg" alt="" class="redball">
+<!-- bootstrap -->
+
+ <!-- <ul class="nav nav-tabs" >
+    <li class="nav-item">
+      <a class="nav-link active"  aria-current="page" href="#"><i class="fa-solid fa-house"></i>Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"  href="#"><img src="./cricket.png" class="cri" alt="" height="15px" width="20px">Matches</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"  href="#">Login</a>
+    </li>
+
+  </ul> -->
+</div>
+
+
+<br>
+
+
+
+
+
+ 
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+    </div>
+
+
+    <div class="carousel-inner">
+
+
+      <div class="carousel-item">
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">First slide</text></svg> -->
+       <img src="./Ipl-auction_1703034762917_1703034773943.avif" alt="" height="400px" width="100%">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="corousal-text" >IPL(<i>Indian Premium League</i>)</h5>
+          <p class="corousal-text-two">Twenty-20</p>
+        </div>
+
+
+      </div>
+      <div class="carousel-item">
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text></svg> -->
+<img src="./india.jpg" alt="" height="400px" width="100%">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="corousal-text">INDIA</h5>
+          <p class="corousal-text-two">INDIAN Team Players</p>
+        </div>
+      </div>
+
+
+      <div class="carousel-item active">
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text></svg> -->
+        <img src="./test.jpg" alt="" height="400px" width="100%">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="corousal-text">Test Matches</h5>
+          <p class="corousal-text-two">The name comes from the five-day-long match being a "test" of the relative strengths of the two sides.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>  
+
+
+
+
+
+   
+  <br>
+  <br>
+
+<div class="Matches">
+
+
+
+<!-- <div class="matchbox">
+    team 1 <br>
+    team 2
+</div> -->
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">RCB Vs CHENNAI SUPER KINGS</h5>
+        <p class="card-text">RCB WON BY 8 WICKETSS CHINNASWAMI Stadium,BAGLURU</p>
+        <a href="./matches.html" class="btn btn-primary">click to view details</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">CHENNAI SUPER KINGS Vs MUMBAI INDIANS</h5>
+        <p class="card-text">CHENNAI WON BY 8 WICKETS</p>
+        <a href="./matches.html " class="btn btn-primary">Click to view details</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">CHENNAI SUPER KINGS Vs MUMBAI INDIANS</h5>
+        <p class="card-text">CHENNAI WON BY 8 WICKETS</p>
+        <a href="./matches.html " class="btn btn-primary">Click to view details</a>
+      </div>
+    </div>
+  </div> -->
+</div>
+<br>
+<!-- twomore cards -->
+<!-- <div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div> -->
+
+
+<br>
+
+<div class="mar">
+    <marquee behavior="" direction="left"><img src="./logo.jpg" alt="" height="30px"  class="logo"><h4>Get Fantasy Handbook @INR 499</h4></marquee>
+
+</div>
+
+<br><br>
+<center><h2 class="videos" style="color: white;">IPL videos</h2> </center>
+<h3 style="color: white;">Chennai Super Kings</h3>
+<div class="iframe">
+    <!-- <h2 >IPL videos</h2> -->
+    <iframe width="460" height="315" src="https://www.youtube.com/embed/2xKKcL0LXyQ?si=pqNQce86cQpsaveJ&amp;start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="460" height="315" src="https://www.youtube.com/embed/FBYgBBRny3I?si=bBOY3SBJ9OGKiH1m&amp;start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="460" height="315" src="https://www.youtube.com/embed/_SMkDYW60mM?si=dEtofSZY1-JibBv3&amp;start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<br><br>
+<h3 style="color: white;">RCB(Royal Challengers Banglore)</h3>
+<div class="iframe">
+    <iframe width="460" height="315" src="https://www.youtube.com/embed/SW-OsKMYuZ0?si=XEDSKMMsOCEfShJ4&amp;start=55" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="460" height="315" src="https://www.youtube.com/embed/eiv-1BMm36Y?si=WJaaSmB9uILDw53d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="460" height="315" src="https://www.youtube.com/embed/-fPjUaTcNi8?si=lmJUcMB5RqemRPqD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</div>
+<br><br>
+<center><h3 class="videos" style="color: white;">World Cup</h3> </center>
+
+<div class="iframe">
+
+    <iframe width="460" height="315" src="https://www.youtube.com/embed/YqKYpgZ9FWU?si=42kWxKkQ2L5FvznW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <iframe width="460" height="315" src="https://www.youtube.com/embed/YphL3Whh5B0?si=pHguUjqApTBz3-ue" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <iframe width="460" height="315" src="https://www.youtube.com/embed/VQpTVVsNHQs?si=iMI3MNGM1QOw8i0O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<br> <br>
+<center><h3 class="videos" style="color: white;">T20 World Cup</h3> </center>
+<div class="iframe">
+    <iframe width="460" height="315" src="https://www.youtube.com/embed/bNLJEsqCFWM?si=-V4DMvCD-w_dt4sJ&amp;start=21" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="460" height="315" src="https://www.youtube.com/embed/cXxfvdVFt58?si=p99y0DdCFzwdMQUw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="460" height="315" src="https://www.youtube.com/embed/eEixgrNGeNQ?si=F8NCtok_IHqhlzbj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<!-- <footer class="footer">
+<div class="footer">
+    <ul class="u">
+<li>
+    <img src="./logo.jpg" alt="" height="30px" ></li>
+  <li>  <a href="./index.html" class="ff"> <i class="fa-solid fa-house"></i>home</a></li>
+    <li><a href="" class="ff" ><img src="./cricket.png" class="cri" alt="" height="15px" width="20px">Matches</a>
+</li></ul>
+</div>
+</footer> -->
+</body>
+</html>

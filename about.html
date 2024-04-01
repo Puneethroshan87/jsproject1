@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+</head>
+<style>
+    .video{
+       top: 0;
+       left: 0;
+       width: 100%;
+        z-index: -1;
+        background-size: cover;
+        position: fixed;
+    }
+    *{
+        color: white;
+    }
+    .ab{
+        font-size: 60px;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .ab:hover{
+        background: transparent;
+    -webkit-text-stroke: 1px whitesmoke;
+    color: transparent;
+    }
+    .ab2{
+        border: 2px solid;
+        width: 500px;
+        margin: auto;
+        padding: 30px;
+        border-radius: 20px;
+        background: transparent;
+        backdrop-filter: blur(15px);
+    }
+    
+.button{
+    color: rgb(244, 239, 239);
+    font-size: 25px;
+    border-radius: 20px;
+background-color: black;
+height: 40px;
+transition: 0.5s;
+}
+.button:hover{
+    background: transparent;
+    -webkit-text-stroke: 1px whitesmoke;
+    color: transparent;
+}
+.navbar{
+    float: right;
+  }
+  .nav a{
+    position: relative;
+    font-size: 20px;
+    color: rgb(245, 237, 237);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.5s;
+    
+    width: ;
+  }
+  a{
+    /* background-color: red; */
+    width: 50px;
+    border-radius: 4px;
+    padding: 5px;
+    transition: 0.5s;
+  }
+   a:hover{
+    -webkit-text-stroke: 0.5px whitesmoke;
+    color: transparent;
+    background:transparent;
+    border: 2px solid white;
+    border-radius: 8px;
+ 
+cursor: pointer;
+  }
+  
+  .btnl{
+    width:130px;
+    height: 30px;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgb(244, 236, 236);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.5;
+    margin-left: 40px;
+    transition: 0.8s;
+    color: goldenrod;
+    background-color: rgba(49, 43, 43, 0.619);
+  }
+  .btnl:hover{
+    background-color: rgba(27, 26, 26, 0.795);
+    color: white;
+    -webkit-text-stroke-color: 2px;
+    background: transparent;
+    -webkit-text-stroke-color: black;
+   cursor: pointer;
+  }
+</style>
+</body>
+<div class="navbar">
+    <ul class="nav">
+      <a href="./loginform2.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./contact.html">Contact</a>
+      <a href="./services.html">Services</a>
+      <button class="btnl">You are in </button>
+    </ul>
+  </div>
+
+  <br>
+
+<video autoplay muted loop   class="video">
+    <source src="./login video.mp4" type="video/mp4"> 
+</video>
+
+
+    <h1  class="ab">About Us!</h1>
+
+
+<div class="ab2">
+   <p>
+    Welcome to <b>PRscores! </b>We're passionate about cricket and committed to delivering the best cricket experience to our users. </p>
+
+    <br>
+
+    <b>Development Process:</b>
+    <p>
+        Our platform was built using the following technologies and tools to deliver the best possible experience for our users.Used HTMl,CSS,JAVASCRIPT to build this project 
+      </p> <br>
+    <p> The development process of this project started in March , 2024 with the aim to  create a platform that would provide an easy and secure  website
+           The scoring system was developed and designed by <b>PUNEETH ROSHAN SANGIREDDY</b>  
+        </p><br>
+   
+<p> Our platform, which is available at [website URL], offers a wide range of features and exclusive content that will cater to every type of cricket fan.
+    Stay up to date with the latest scores, player rankings, series schedules, and more.
+    With our fast and user-friendly interface, you can easily find the information you need and enjoy a seamless experience.
+</p>
+
+<br>
+<p>
+    Reach out to us with any questions or comments using our contact form, and follow us on social media for the latest updates.
+    We're excited to have you as part of our community!
+  </p>
+  <center>
+ <button class="button">Contact</button>
+ </center>
+  </div>
+
+
+
+
+  <script>
+
+
+
+const cont=document.querySelector(".button");
+     cont.addEventListener("click",()=>{
+        window.location.assign("./contact.html")
+     });
+
+  </script>
+</body>
+</html>

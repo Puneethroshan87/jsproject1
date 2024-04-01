@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+</head>
+<style>
+    .bgvideo{
+        z-index: -1;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+   .umpires{
+    border: 2px solid white;
+    color: rgb(27, 24, 24);
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 20px; */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    backdrop-filter: blur(15px);
+   }
+   .grounds{
+    border: 2px solid white;
+    color: rgb(40, 35, 35);
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 20px; */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    backdrop-filter: blur(15px);
+   }
+   .scorer{
+    border: 2px solid white;
+    color: rgb(29, 25, 25);
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 20px; */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    backdrop-filter: blur(15px);
+   }
+   .service{
+    background-color: transparent;
+    /* height: 500px; */
+    display: flex;
+    gap:30px;
+    border: 2px white solid;
+    padding: 20px;
+    width: max-content;
+    align-items: center;
+    justify-content: center;
+    top: 500px;
+    margin-top: 10px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    /* transition: 0.5s;
+    transform: scale(1,1); */
+   }
+   /* .service:hover{
+width: max-content;
+   } */
+   .haa{
+    font-size: 80px;
+    color: aliceblue;
+    margin-top: 80px;
+    transition: 0.5s;
+   }
+       
+   .haa:hover{
+    /* background: transparent; */
+   
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(250, 248, 248);
+   }
+   .contact{
+    background-color: rgba(0, 0, 0, 0.886);
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 18px;
+    border:none;
+    transition: 0.5s;
+   }
+   .contact:hover{
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+   }
+   .contact1{
+    background-color: rgba(0, 0, 0, 0.886);
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 18px;
+    border:none;
+    transition: 0.5s;
+   }
+   .contact1:hover{
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+   }
+   .contact2{
+    background-color: rgba(0, 0, 0, 0.886);
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 18px;
+    border:none;
+    transition: 0.5s;
+   }
+   .contact2:hover{
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+   }
+   .navbar{
+    float: right;
+  }
+  .nav a{
+    position: relative;
+    font-size: 20px;
+    color: rgb(245, 237, 237);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.5s;
+    
+    width: ;
+  }
+  a{
+    /* background-color: red; */
+    width: 50px;
+    border-radius: 4px;
+    padding: 5px;
+    transition: 0.5s;
+  }
+   a:hover{
+    -webkit-text-stroke: 0.5px whitesmoke;
+    color: transparent;
+    background:transparent;
+    border: 2px solid white;
+    border-radius: 8px;
+ 
+
+  }
+  
+  .btnl{
+    width:130px;
+    height: 30px;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgb(244, 236, 236);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.5;
+    margin-left: 40px;
+    transition: 0.8s;
+    color: goldenrod;
+    background-color: rgba(49, 43, 43, 0.619);
+  }
+  .btnl:hover{
+    background-color: rgba(27, 26, 26, 0.795);
+    color: white;
+    -webkit-text-stroke-color: 2px;
+    background: transparent;
+    -webkit-text-stroke-color: black;
+  }
+</style>
+<body>
+    <div class="navbar">
+        <ul class="nav">
+          <a href="./loginform2.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./services.html">Services</a>
+          <button class="btnl">You are in </button>
+        </ul>
+      </div>
+      <br>
+
+<video autoplay muted loop class="bgvideo">
+    <source src="./login video.mp4" type="video/mp4">
+</video>
+
+<center>
+
+    <center> <h2 class="haa">Services We  Offer</h2></center>
+    <div  class="service" >
+       
+        <center>
+           
+<div class="umpires" class="card">
+    <h2>Umpires</h2>
+    <h4> Highly Experienced </h4>
+    <p>We proved the best umpires around the state </p>
+        <p>Certified Umpires</p>
+       
+     <img src="./umpire.jpg" alt="" width="250px" class="imgg" >
+<br>
+<button class="contact">Contact</button>
+</div>
+</center>
+
+<center>
+<div class="grounds" class="card">
+    <h2>Grounds</h2>
+    <h4> Highly Maintained </h4>
+    <p>We proved the best Grounds with grass around the state </p>
+        <p>Turf wicket</p>
+        <img src="./ground.jpg" alt="" width="250px"><br>
+        <button class="contact1">Contact</button>
+</div> </center>
+
+<center>
+<div class="scorer" class="card">
+    <h2>Scorer</h2>
+    <h4> Professional Scoreres </h4>
+    <p>We proved the best scorers around the state </p>
+        <p>Certified scoreres</p>
+        <img src="./scorer.jpg" alt="" width="100%" height="160px">
+        <br>
+        <button class="contact2">Contact</button>
+</div> </center>
+    </div>
+</center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+    const contact=document.querySelector(".contact");
+     contact.addEventListener("click",()=>{
+        window.location.assign("./contact.html")
+     });
+
+     const contact1=document.querySelector(".contact1");
+     contact1.addEventListener("click",()=>{
+        window.location.assign("./contact.html")
+     });
+
+     const contact2=document.querySelector(".contact2");
+     contact2.addEventListener("click",()=>{
+        window.location.assign("./contact.html")
+     });
+
+
+
+    
+    
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</body>
+</html>
